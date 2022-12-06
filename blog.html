@@ -134,7 +134,7 @@
         margin-right: 0;
       }
 
-      .box-icon{
+      .box-icon {
         color: #ee6c4d;
       }
 
@@ -180,15 +180,15 @@
       }
 
       #downIcon {
-          display: none;
-          color: #ee6c4d;
-        }
+        display: none;
+        color: #ee6c4d;
+      }
 
-        .blogName{
-          color: #0d61d3;
-          text-transform: uppercase;
-          font-weight: bold;
-        }
+      .blogName {
+        color: #0d61d3;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
       @media (max-width: 1350px) {
         .leftSide {
           width: 70%;
@@ -226,7 +226,7 @@
           background: #ecf2fa;
           /* justify-content: center; */
         }
-        
+
         .rightSide h2 {
           text-transform: uppercase;
           margin-top: -150px;
@@ -427,18 +427,22 @@
         <div class="col">
           <div class="blog">
             <img src="image/bg-1.jpg" alt="" />
-            <h2>FEATURED BLOGS</h2>
+            <h2 style="text-align: center">LIFE OF AN INDIAN TRUCK DRIVER</h2>
             <p>
-              To make Indian HIGHWAYS SIMPLIFIED! To make Indian HIGHWAYS
-              SIMPLIFIED! To make Indian HIGHWAYS SIMPLIFIED! To make
+              More Than 300 Years Ago, A Horse-Drawn Wagon Was Used To Carry
+              Goods From One Place To Another, Which Took Months To Reach Its
+              Destination....
             </p>
           </div>
           <div class="blog">
             <img src="image/bg-1.jpg" alt="" />
-            <h2>FEATURED BLOGS</h2>
+            <h2 style="text-align: center">
+              GET THE BEST TRUCK DRIVING JOBS IN INDIA WITH RIYO
+            </h2>
             <p>
-              To make Indian HIGHWAYS SIMPLIFIED! To make Indian HIGHWAYS
-              SIMPLIFIED! To make Indian HIGHWAYS SIMPLIFIED! To make
+              A country of nearly 140 crore people, 28 states ,8 union
+              territories and an area of 3.287 million KM².Having 151019 KM
+            .....
             </p>
           </div>
         </div>
@@ -482,9 +486,10 @@
         </div>
         <div class="center">
           <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#" class="active">2</a>
+            <a href="#" >&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <!-- <a href="#" class="active">2</a> -->
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
@@ -501,13 +506,13 @@
         <div class="list">
           <button class="accordion">
             <box-icon type="solid" name="up-arrow" id="upIcon"></box-icon>
-            <box-icon type="solid" name="down-arrow" id="downIcon"></box-icon
-            > &nbsp; TOP BLOGS
+            <box-icon type="solid" name="down-arrow" id="downIcon"></box-icon>
+            &nbsp; TOP BLOGS
           </button>
           <div class="panel">
             <a href="blog1.html" class="blogName">BLOG 1</a> <br />
             <a href="blog2.html" class="blogName">BLOG 2</a><br />
-            <a href="#" class="blogName">BLOG 3</a><br />
+            <!-- <a href="#" class="blogName">BLOG 3</a><br />
             <a href="#" class="blogName">BLOG 4</a><br />
             <a href="#" class="blogName">BLOG 5</a><br />
             <a href="#" class="blogName">BLOG 6</a><br />
@@ -516,7 +521,7 @@
             <a href="#" class="blogName">BLOG 9</a><br />
             <a href="#" class="blogName">BLOG 10</a><br />
             <a href="#" class="blogName">BLOG 11</a><br />
-            <a href="#" class="blogName">BLOG 12</a>
+            <a href="#" class="blogName">BLOG 12</a> -->
           </div>
           <button class="accordion">FEATURED BLOGS</button>
         </div>
@@ -565,6 +570,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="service.html">RIYO Services</a></li>
             <li><a href="riyobusiness.html">RIYO Business</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </div>
         <ul>
@@ -607,12 +613,18 @@
     </footer>
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
       }
-      </script>
-      
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-      <script src="js/script.js"></script>
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
   <script>
     var acc = document.getElementsByClassName("accordion");

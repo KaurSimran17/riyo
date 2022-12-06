@@ -652,3 +652,12 @@ font input[type=submit]{
   justify-content: center;
   align-items: center;
 }
+
+.sub-heading a{
+  text-decoration: none;
+  color: #ee6c4d;
+}
+
+/* .blog h2{
+  text-transform: capitalize;
+} */
