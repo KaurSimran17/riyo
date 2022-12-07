@@ -658,4 +658,11 @@ font input[type=submit]{
   text-decoration: none;
   color: #ee6c4d;
 }
-
+.section-one p a{
+  text-decoration: none;
+  color: #707070;
+}
+.section-two p a{
+  text-decoration: none;
+  color: #707070;
+}
