@@ -139,7 +139,7 @@
   padding-top: 10px;
   font-weight: 600;
 }
-img{
+img {
   width: 90%;
 }
 .section-one {
@@ -233,7 +233,7 @@ img{
 }
 .suggestion h1 {
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 
 form {
@@ -619,13 +619,13 @@ option {
   display: none;
 }
 
-option[value=bn] {
+option[value="bn"] {
   display: block;
 }
-option[value=hi] {
+option[value="hi"] {
   display: block;
 }
-option[value=en] {
+option[value="en"] {
   display: block;
 }
 
@@ -641,12 +641,12 @@ option[value=en] {
   /* height: 300px; */
   gap: 20px 0;
 }
-.grid-photo{
+.grid-photo {
   background-color: rgba(255, 255, 255, 0.8);
   height: 30%;
 }
 
-font input[type=submit]{
+font input[type="submit"] {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -654,15 +654,26 @@ font input[type=submit]{
   cursor: pointer;
 }
 
-.sub-heading a{
+.sub-heading a {
   text-decoration: none;
   color: #ee6c4d;
 }
-.section-one p a{
+.section-one p a {
   text-decoration: none;
   color: #707070;
 }
-.section-two p a{
+.section-two p a {
   text-decoration: none;
   color: #707070;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-content p {
+    color: #ee6c4d;
+    font-size: 1.6rem;
+  }
+  .hero-content span {
+    color: #fff;
+    width: 90%;
+  }
 }
