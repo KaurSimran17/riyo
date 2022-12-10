@@ -125,6 +125,19 @@
         display: flex;
         justify-content: center;
       }
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
       .slideshow-container .mySlides {
         display: none;
         width: 70%;
@@ -810,8 +823,8 @@
             <img src="image/d7.png" style="width: 100%" />
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a> -->
         </div>
       </div>
     </section>
@@ -975,67 +988,24 @@
       });
     </script>
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+      let slideIndex = 0;
+      showSlides();
 
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
+      function showSlides() {
         let i;
         let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
+        // let dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        // for (i = 0; i < dots.length; i++) {
+        //   dots[i].className = dots[i].className.replace(" active", "");
+        // }
         slides[slideIndex - 1].style.display = "flex";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
-
-    <script>
-      let Index = 1;
-      showSlide(Index);
-
-      function plusSlide(n) {
-        showSlide((Index += n));
-      }
-
-      function currentSlide(n) {
-        showSlide((Index = n));
-      }
-
-      function showSlide(n) {
-        let i;
-        let slide = document.getElementsByClassName("mySlide");
-        if (n > slide.length) {
-          Index = 1;
-        }
-        if (n < 1) {
-          Index = slide.length;
-        }
-        for (i = 0; i < slide.length; i++) {
-          slide[i].style.display = "none";
-        }
-        //   for (i = 0; i < dots.length; i++) {
-        //     dots[i].className = dots[i].className.replace(" active", "");
-        //   }
-        slide[Index - 1].style.display = "flex";
-        //   dots[slideIndex - 1].className += " active";
+        // dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
     </script>
 
