@@ -68,17 +68,21 @@
       }
 
       .driverSection .leftCorner {
-        width: 60%;
+        width: 50%;
         height: 90%;
         padding: 20px;
       }
       .driverSection .rightCorner {
-        width: 40%;
+        width: 50%;
         height: 100%;
         padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+
+      .driverSection .rightCorner p {
+        line-height: 20px;
       }
 
       .driverSection .leftCorner h1 {
@@ -97,7 +101,7 @@
         width: 79%;
       }
 
-      .leftCorner li{
+      .leftCorner li {
         list-style: circle;
         margin-left: 15px;
       }
@@ -201,13 +205,13 @@
         display: flex;
         flex-direction: row;
       }
-      .bg-shadow {
-    height: 85vh;
-    width: 100%;
-    background-color: rgba(0,0,0,0.9);
-    opacity: .65;
-    position: absolute;
-}
+      .bg-shadows {
+        height: 85vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0.65;
+        position: absolute;
+      }
 
       .dress .leftContent {
         background: #ecf2fa;
@@ -587,6 +591,10 @@
           justify-content: start;
           align-items: center;
         }
+        .leftCode img {
+          width: 55%;
+          height: 90%;
+        }
       }
       @media screen and (max-width: 458px) {
         .slideshow-problem .mySlide img {
@@ -696,7 +704,7 @@
       <img src="image/loading.png" alt="" />
     </div>
     <div class="container" id="home">
-      <!-- <div class="bg-shadow"></div> -->
+      <div class="bg-shadows"></div>
       <header>
         <a href="index.html" class="logo">
           <img src="image/logo.svg" alt="" />
@@ -953,8 +961,8 @@
     </section>
     <section class="barCode">
       <div class="leftCode">
-        <img src="image/barcode1.png" alt="" class="codeImg" />
-        <img src="image/barcode2.png" alt="" class="codeImg" />
+        <!-- <img src="image/barcode1.png" alt="" class="codeImg" /> -->
+        <img src="image/newqr1@2x.png" alt="" class="codeImg" />
       </div>
       <div class="rightCode">
         <h2 style="color: #0d61d3">Download RIYO App</h2>
@@ -971,12 +979,12 @@
         <br />
         <br />
         <div class="iconsBtn">
-          <a href="">
+          <a href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1">
             <img src="image/img3.png" alt="" />
           </a>
-          <a href="">
+          <!-- <a href="">
             <img src="image/img4.png" alt="" />
-          </a>
+          </a> -->
         </div>
       </div>
     </section>
@@ -1035,7 +1043,7 @@
           ><i class="bx bxl-youtube"></i
         ></a>
         <h2>DOWNLOAD RIYO APP</h2>
-        <a href="">
+        <a href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1">
           <img src="image/img3.png" alt="" />
         </a>
         <a href="">
