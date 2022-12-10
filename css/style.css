@@ -2328,3 +2328,25 @@ span.aos-init.aos-animate {
   color: #505050;
   transform: rotateY(180deg);
 }
+
+@media screen and (max-width:900px){
+  .section2 {
+    height: auto;
+    width: 100%;
+    background-color: #ecf2fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.box2-right1 .formSection {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  background: #f8f8f8;
+  margin-bottom: 20px;
+}
+  
+}
