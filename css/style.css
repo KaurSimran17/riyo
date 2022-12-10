@@ -2388,7 +2388,7 @@ span.aos-init.aos-animate {
 
 @media screen and (max-width: 750px) {
   .cards .card {
-    width: 25%;
+    width: 30%;
     height: 60%;
   }
 }
@@ -2414,7 +2414,7 @@ span.aos-init.aos-animate {
   }
   .cards {
     width: 100vw;
-    height: 70vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -2425,4 +2425,13 @@ span.aos-init.aos-animate {
     width: 50%;
     height: 70%;
 }
+}
+
+@media screen and (max-width: 380px) {
+
+  .cards .card {
+    width: 55%;
+    height: 25%;
+    padding: 10px;
+  }
 }
