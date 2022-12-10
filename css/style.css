@@ -2329,9 +2329,9 @@ span.aos-init.aos-animate {
   transform: rotateY(180deg);
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:940px){
   .section2 {
-    height: auto;
+    height: 80vh;
     width: 100%;
     background-color: #ecf2fa;
     display: flex;
@@ -2339,14 +2339,37 @@ span.aos-init.aos-animate {
     align-items: center;
     position: relative;
     margin-bottom: 10px;
+}  
 }
+
+@media screen and (min-width:700px) and (max-width:940px){
+  
 .box2-right1 .formSection {
-  width: 50%;
-  height: 60%;
+  width: 60%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   background: #f8f8f8;
   margin-bottom: 20px;
 }
-  
+.box2-right1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
+}
+
+
+@media screen and (min-width:500px) and (max-width:699px){
+  
+  .box2-right1 .formSection {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    background: #f8f8f8;
+    margin-bottom: 20px;
+  }
+    
+  }
