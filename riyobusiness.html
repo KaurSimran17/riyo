@@ -47,6 +47,40 @@
           </li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
+        <script>
+          !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+              n.callMethod
+                ? n.callMethod.apply(n, arguments)
+                : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+          })(
+            window,
+            document,
+            "script",
+            "https://connect.facebook.net/en_US/fbevents.js"
+          );
+          fbq("init", "853830288938566");
+          fbq("track", "PageView");
+        </script>
+        <noscript
+          ><img
+            height="1"
+            width="1"
+            style="display: none"
+            src="https://www.facebook.com/tr?id=853830288938566&ev=PageView&noscript=1"
+        /></noscript>
       </header>
       <div class="main">
         <h1>RIYO BUSINESS</h1>
@@ -556,7 +590,7 @@
             and App Store</span
           >
           <div class="app_link">
-            <a href="">
+            <a href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1">
               <img src="image/img3.png" alt="" />
             </a>
             <a href="">
@@ -568,7 +602,9 @@
     </section>
     <footer class="footer">
       <div class="description">
-        <img src="image/logo.png" alt="" />
+        <a href="index.html">
+          <img src="image/logo.svg" alt="" />
+          </a>
         <p>
           RIYO is designed to simplify and eliminate every problem faced by
           every Highway entity in day to day life. RIYO app is an all in one
@@ -621,7 +657,7 @@
           ><i class="bx bxl-youtube"></i
         ></a>
         <h2>DOWNLOAD RIYO APP</h2>
-        <a href="">
+        <a href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1">
           <img src="image/img3.png" alt="" />
         </a>
         <a href="">
