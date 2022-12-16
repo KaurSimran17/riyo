@@ -72,7 +72,7 @@ header {
 
 .navbar {
   display: flex;
-  gap: 2.8rem;
+  gap: 39px;
 }
 
 .navbar a:active {
@@ -84,7 +84,7 @@ header {
 }
 
 .navbar a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: white;
 }
@@ -125,7 +125,7 @@ header {
     both;
 }
 
-a{
+a {
   color: #505050;
 }
 @-webkit-keyframes tracking-in-expand-fwd-top {
@@ -867,9 +867,10 @@ a{
 }
 
 .menu {
+  width: 30%;
   height: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .menu li {
@@ -898,12 +899,13 @@ a{
 .social-link h2 {
   color: #505050;
   font-size: 1.3rem;
-  padding: 10px;
+  padding-bottom: 10px;
+  /* padding: 10px; */
 }
 
 .social-link a {
   padding: 5px;
-  font-size: 3.2rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -916,8 +918,44 @@ a{
 }
 
 .social-link i:hover {
-  color: var(--text-color);
+  /* color: var(--text-color); */
   transform: scale(1.2);
+}
+.bxl-instagram:hover{
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  border-radius: 5px;
+}
+
+.bxl-whatsapp:hover{
+  background: #25D366;
+  border-radius: 5px;
+}
+
+.bxl-facebook:hover{
+  background: #3b5998;
+  border-radius: 5px;
+}
+.bxl-twitter:hover{
+  background: #00acee;
+  border-radius: 5px;
+}
+.bxl-linkedin:hover{
+  background:  #0A66C2;
+  border-radius: 5px;
+}
+
+.bxl-youtube:hover{
+  background:  #c4302b;
+  border-radius: 5px;
+  width: 40px;
+  text-align: center;
 }
 
 /* Footer end */
@@ -2410,7 +2448,7 @@ span.aos-init.aos-animate {
   .flip-card-front img {
     width: 60%;
     height: 60%;
-}
+  }
 }
 @media screen and (max-width: 500px) {
   .cards .card {
@@ -2430,11 +2468,10 @@ span.aos-init.aos-animate {
   .flip-card-front img {
     width: 50%;
     height: 60%;
-}
+  }
 }
 
 @media screen and (max-width: 380px) {
-
   .cards .card {
     width: 55%;
     height: 25%;
@@ -2442,22 +2479,22 @@ span.aos-init.aos-animate {
   }
   h1.aos-init.aos-animate {
     font-size: 1.5rem;
-}
-.flip-card-front img {
-  width: 60%;
-  height: 60%;
-}
+  }
+  .flip-card-front img {
+    width: 60%;
+    height: 60%;
+  }
 }
 
-@media screen and (max-width: 300px){
-.flip-card-front img {
+@media screen and (max-width: 300px) {
+  .flip-card-front img {
     width: 70%;
-    height: 60%;}
-
+    height: 60%;
+  }
 }
 b.aos-init.aos-animate {
   text-align: center;
-  color: #EE6C4D;
+  color: #ee6c4d;
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
@@ -2471,7 +2508,102 @@ b.aos-init.aos-animate {
   align-items: center;
 }
 
-@media screen and (max-width:580px) {
+@media screen and (max-width: 580px) {
   b.aos-init.aos-animate {
-    font-size: 1.5rem;}
+    font-size: 1.5rem;
+  }
+}
+
+.contactText h1 {
+  font-size: 4.5rem;
+  padding: 5px;
+  -webkit-animation: tracking-in-expand-fwd-top 1.3s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd-top 1.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+.contactText {
+  height: 80vh;
+  width: 100%;
+  color: var(--primary-color);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactText p {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 5px;
+  -webkit-animation: tracking-in-expand-fwd-top 1.3s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd-top 1.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+.heroContent {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.contactText .translate {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .contactText p {
+    font-size: 1rem;
+  }
+  .contactText h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  
+  .contactText h1 {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  
+  .contactText h1 {
+    font-size: 2rem;
+  }
+
+  div#google_translate_element {
+    margin-top: -70px;
+}
+}
+
+@media screen and (max-width: 330px) {
+  
+  .contactText h1 {
+    font-size: 1.3rem;
+  }
+  .contactText p {
+    text-align: center;
+  }
+}
+
+
+
+.box2-left.contact-left p {
+  font-size: 1.1rem;
+}
+
+.padding{
+  padding-top: 20px;
 }
