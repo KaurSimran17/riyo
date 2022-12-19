@@ -2715,8 +2715,8 @@ b.aos-init.aos-animate {
 }
 
 .iconImg {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   transition: ease-in;
 }
 .iconImg:hover {
