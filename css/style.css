@@ -921,7 +921,7 @@ a {
   /* color: var(--text-color); */
   transform: scale(1.2);
 }
-.bxl-instagram:hover{
+.bxl-instagram:hover {
   background: linear-gradient(
     45deg,
     #f09433 0%,
@@ -933,26 +933,26 @@ a {
   border-radius: 5px;
 }
 
-.bxl-whatsapp:hover{
-  background: #25D366;
+.bxl-whatsapp:hover {
+  background: #25d366;
   border-radius: 5px;
 }
 
-.bxl-facebook:hover{
+.bxl-facebook:hover {
   background: #3b5998;
   border-radius: 5px;
 }
-.bxl-twitter:hover{
+.bxl-twitter:hover {
   background: #00acee;
   border-radius: 5px;
 }
-.bxl-linkedin:hover{
-  background:  #0A66C2;
+.bxl-linkedin:hover {
+  background: #0a66c2;
   border-radius: 5px;
 }
 
-.bxl-youtube:hover{
-  background:  #c4302b;
+.bxl-youtube:hover {
+  background: #c4302b;
   border-radius: 5px;
   width: 40px;
   text-align: center;
@@ -2570,26 +2570,22 @@ b.aos-init.aos-animate {
 }
 
 @media screen and (max-width: 750px) {
-  
   .contactText h1 {
     font-size: 3rem;
   }
 }
 
-
 @media screen and (max-width: 450px) {
-  
   .contactText h1 {
     font-size: 2rem;
   }
 
   div#google_translate_element {
     margin-top: -70px;
-}
+  }
 }
 
 @media screen and (max-width: 330px) {
-  
   .contactText h1 {
     font-size: 1.3rem;
   }
@@ -2598,12 +2594,174 @@ b.aos-init.aos-animate {
   }
 }
 
-
-
 .box2-left.contact-left p {
   font-size: 1.1rem;
 }
 
-.padding{
+.padding {
   padding-top: 20px;
+}
+
+/* Services */
+.slider {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.slide {
+  width: calc(100% / 3);
+  height: 100%;
+  transition: 1s ease-in;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+}
+.boxSection {
+  width: 100%;
+  height: 50px;
+  background: rgba(13, 97, 211,0.4);
+  /* background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(13, 97, 211)); */
+  border: 1px solid #505050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in;
+}
+
+.sec1 {
+  background: #00acee;
+  cursor: pointer;
+}
+
+.sec2 {
+  background: #eeea00;
+  cursor: pointer;
+}
+
+.sec3 {
+  background: #ee5700;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide.sec1:hover {
+  width: 50%;
+}
+
+.slide.sec1:hover .iconsBox {
+  display: flex;
+}
+.slide.sec2:hover .iconsBox {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide.sec3:hover .iconsBox {
+  display: flex;
+}
+.slide.sec1:hover .boxSection {
+  height: 15%;
+}
+.slide.sec2:hover .boxSection {
+  height: 15%;
+}
+.slide.sec3:hover .boxSection {
+  height: 15%;
+}
+.slide.sec1:hover .contentBox {
+  justify-content: space-evenly;
+}
+
+.slide.sec1:hover .contentBox button {
+  display: block;
+}
+.slide.sec2:hover .contentBox button {
+  display: block;
+}
+.slide.sec3:hover .contentBox button {
+  display: block;
+}
+
+.slide.sec2:hover {
+  width: 50%;
+}
+.slide.sec3:hover {
+  width: 50%;
+}
+.contentBox {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.iconsBox {
+  width: 80%;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 40%;
+  gap: 10px;
+}
+
+.iconImg {
+  width: 60px;
+  height: 60px;
+  transition: ease-in;
+}
+.iconImg:hover {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #e6683c;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.8rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.contentBox button {
+  display: none;
+  background: #0a66c2;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+
+
+.c p{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
