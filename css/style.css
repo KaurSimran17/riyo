@@ -2492,7 +2492,7 @@ span.aos-init.aos-animate {
     height: 60%;
   }
 }
-b.aos-init.aos-animate {
+b {
   text-align: center;
   color: #ee6c4d;
   font-size: 2.5rem;
@@ -2766,4 +2766,18 @@ b.aos-init.aos-animate {
 .c p{
   font-size: 0.9rem;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width:875px) {
+  .menu {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* .otherLinks {
+  margin-top: 20px;
+} */
 }
