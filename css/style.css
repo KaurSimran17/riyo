@@ -1548,7 +1548,7 @@ form {
   }
 
   .section4 {
-    min-height: 65vh;
+  height: 65vh;
   }
 }
 
