@@ -1959,9 +1959,6 @@ form {
   .inside-icon span {
     font-size: 1.1rem;
   }
-  .section4 {
-    height: 55vh;
-  }
 }
 
 @media (max-width: 380px) {
@@ -2780,4 +2777,12 @@ b {
 /* .otherLinks {
   margin-top: 20px;
 } */
+}
+
+@media (max-width: 480px){
+.section4 {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
 }
