@@ -2635,6 +2635,8 @@ b.aos-init.aos-animate {
 .sec1 {
   background: #00acee;
   cursor: pointer;
+  /* background-image: url("image/4.png"); */
+
 }
 
 .sec2 {
@@ -2715,8 +2717,8 @@ b.aos-init.aos-animate {
 }
 
 .iconImg {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   transition: ease-in;
 }
 .iconImg:hover {
