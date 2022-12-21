@@ -1548,7 +1548,7 @@ form {
   }
 
   .section4 {
-  height: 65vh;
+    height: 65vh;
   }
 }
 
@@ -2564,6 +2564,10 @@ b {
   .contactText h1 {
     font-size: 3.5rem;
   }
+  .problems h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -2571,7 +2575,11 @@ b {
     font-size: 3rem;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .problems {
+    height: 40vh;
+  }
+}
 @media screen and (max-width: 450px) {
   .contactText h1 {
     font-size: 2rem;
@@ -2621,7 +2629,7 @@ b {
 .boxSection {
   width: 100%;
   height: 50px;
-  background: rgba(13, 97, 211,0.4);
+  background: rgba(13, 97, 211, 0.4);
   /* background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(13, 97, 211)); */
   border: 1px solid #505050;
   display: flex;
@@ -2771,56 +2779,52 @@ b {
   margin: 0 auto;
 }
 
-
-
-.c p{
+.c p {
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
 
-@media screen and (max-width:875px) {
+@media screen and (max-width: 875px) {
   .menu {
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
+  }
 
-/* .otherLinks {
+  /* .otherLinks {
   margin-top: 20px;
 } */
 }
 
-@media (max-width: 480px){
-.section4 {
+@media (max-width: 480px) {
+  .section4 {
     height: 20vh;
     display: flex;
     justify-content: center;
-}
+  }
 }
 
 /* .slide img{
   width: 200px;
 } */
 
-
-.c p{
+.c p {
   display: none;
 }
 
-.slide.sec1:hover .c p{
+.slide.sec1:hover .c p {
   display: block;
 }
 
-.slide.sec2:hover .c p{
+.slide.sec2:hover .c p {
   display: block;
 }
 
-.slide.sec3:hover .c p{
+.slide.sec3:hover .c p {
   display: block;
 }
-
 
 /* DROPDOWN */
 .dropdown {
