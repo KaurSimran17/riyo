@@ -1003,9 +1003,9 @@
             <img src="image/slide6.png" style="width: 100%" />
           </div>
         </div>
-
+<!-- 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
       </div>
     </section>
     <section class="section3">
@@ -1240,6 +1240,7 @@
         setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
     </script>
+    
 
     <script type="text/javascript">
       function googleTranslateElementInit() {
@@ -1254,8 +1255,26 @@
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
-
     <script>
+      let slide= 0;
+      showSlide();
+
+      function showSlide() {
+        let i;
+        let slides = document.getElementsByClassName("mySlide");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slide++;
+        if (slide> slides.length) {
+          slide = 1;
+        }
+
+        slides[slide - 1].style.display = "flex";
+        setTimeout(showSlide, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <!-- <script>
       let slide = 1;
       showSlide(slide);
 
@@ -1286,6 +1305,6 @@
         slides[slide - 1].style.display = "flex";
         dots[slide - 1].className += " active";
       }
-    </script>
+    </script> -->
   </body>
 </html>
