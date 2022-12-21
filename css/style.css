@@ -2601,7 +2601,7 @@ b {
 
 /* Services */
 .slider {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -2616,6 +2616,7 @@ b {
   flex-direction: column;
   justify-content: flex-end;
   /* align-items: flex-end; */
+  /* background: url("image/3.png"); */
 }
 .boxSection {
   width: 100%;
@@ -2630,23 +2631,34 @@ b {
 }
 
 .sec1 {
-  background: #00acee;
+  /* background: #00acee; */
   cursor: pointer;
-  /* background-image: url("image/4.png"); */
-
+  background-image: url(../image/driveronhighway.png);
+  background-size: cover;
 }
 
 .sec2 {
-  background: #eeea00;
+  /* background: #eeea00; */
   cursor: pointer;
+  /* background-image: url("image/ownerwithtrucks.png"); */
+  background-image: url(../image/ownerwithtrucks.png);
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
 
 .sec3 {
-  background: #ee5700;
+  /* background-image: url(../image/ownerwithtrucks.png); */
+  background-size: cover;
+  background-attachment: fixed;
 }
 .slide img {
   width: 100%;
   height: 100%;
+}
+
+.mySlide img {
+  width: 100%;
+  height: 80%;
 }
 
 .slide.sec1:hover {
@@ -2756,6 +2768,7 @@ b {
   border: none;
   cursor: pointer;
   margin-top: 40px;
+  margin: 0 auto;
 }
 
 
@@ -2785,4 +2798,50 @@ b {
     display: flex;
     justify-content: center;
 }
+}
+
+/* .slide img{
+  width: 200px;
+} */
+
+
+.c p{
+  display: none;
+}
+
+.slide.sec1:hover .c p{
+  display: block;
+}
+
+.slide.sec2:hover .c p{
+  display: block;
+}
+
+.slide.sec3:hover .c p{
+  display: block;
+}
+
+
+/* DROPDOWN */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #ee6c4d;
+  width: 130px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  height: 70px;
+  color: #000;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5px;
+}
+.dropdown li a {
+  font-size: 0.9rem;
+}
+.dropMenu:hover .dropdown {
+  display: flex;
+}
+.dropdown:hover .dropdown {
+  display: flex;
 }
