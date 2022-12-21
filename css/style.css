@@ -2574,14 +2574,19 @@ b {
   .contactText h1 {
     font-size: 3rem;
   }
+  /* .dropdown{
+    width: 100%;
+  } */
   .dropdown a {
-    color: #fff;}
+    color: #fff;
+  }
 }
 @media screen and (max-width: 600px) {
   .problems {
     height: 40vh;
   }
 }
+
 @media screen and (max-width: 450px) {
   .contactText h1 {
     font-size: 2rem;
