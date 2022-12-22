@@ -2651,6 +2651,10 @@ b {
   background-position: center;
   background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.3)),
     url(../image/driveronhighway.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec2 {
@@ -2659,6 +2663,10 @@ b {
     url(../image/ownerwithtrucks.png);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec3 {
@@ -2667,6 +2675,10 @@ b {
     url(../image/ownerwithtrucks.png);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .slide img {
   width: 100%;
@@ -2725,12 +2737,14 @@ b {
   width: 50%;
 }
 .contentBox {
-  height: 80%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  /* background: #fff;
+  opacity: 0.2; */
 }
 
 .iconsBox {
