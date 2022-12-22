@@ -2646,26 +2646,25 @@ b {
 }
 
 .sec1 {
-  /* background: #00acee; */
   cursor: pointer;
-  /* background-image: url(../image/driveronhighway.png); */
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient( rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.3)),
     url(../image/driveronhighway.png);
 }
 
 .sec2 {
-  /* background: #eeea00; */
   cursor: pointer;
-  background-image: linear-gradient( rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.3)),
     url(../image/ownerwithtrucks.png);
   background-size: cover;
   background-position: center;
 }
 
 .sec3 {
-  /* background-image: url(../image/ownerwithtrucks.png); */
+  cursor: pointer;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.3)),
+    url(../image/ownerwithtrucks.png);
   background-size: cover;
   background-position: center;
 }
@@ -2787,11 +2786,14 @@ b {
   cursor: pointer;
   margin-top: 40px;
   margin: 0 auto;
+  color: #fff;
 }
 
 .c p {
   font-size: 0.9rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 875px) {
