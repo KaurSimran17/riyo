@@ -590,29 +590,41 @@ input[type="submit"] {
 }
 
 /* Translator */
+.translate{
+  margin-left: 20px;
+}
 div#google_translate_element {
-  width: 200px;
+  width: 145px;
   color: #fff;
+  font-size: 0.7rem;
 }
 
 .goog-te-gadget {
   font-family: arial;
   font-size: 11px;
-  color: #fff;
+  color: #ee6c4d;
   white-space: nowrap;
 }
 
-div#\:0\.targetLanguage {
+/* div#\:0\.targetLanguage {
   height: 30px;
+} */
+.skiptranslate.goog-te-gadget {
+  color: #ee6c4d;
 }
 
+select.goog-te-combo {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 20px;
+}
 .goog-te-gadget .goog-te-combo {
   margin: 4px 0;
   height: 40px;
   width: 100%;
   color: #fff;
   padding: 10px;
-  background: #666;
+  background: #ee6c4d;
 }
 
 div#google_translate_element span {
@@ -681,7 +693,6 @@ font input[type="submit"] {
     width: 90%;
   }
 }
-
 
 /* #translate {
   margin-top: 20px;
