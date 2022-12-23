@@ -2719,7 +2719,16 @@ b {
   height: 15%;
 }
 .slide.sec1:hover .contentBox {
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  height: 100%;
+}
+.slide.sec2:hover .contentBox {
+  justify-content: flex-start;
+  height: 100%;
+}
+.slide.sec3:hover .contentBox {
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .slide.sec1:hover .contentBox button {
@@ -2744,10 +2753,10 @@ b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
   /* background: #fff;
   opacity: 0.2; */
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .iconsBox {
