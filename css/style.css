@@ -2759,6 +2759,13 @@ b {
   margin-top: 80px;
 }
 
+@media screen and (max-width:680px){
+  .contentBox {
+    margin-top: 120px;
+  }
+  
+  
+}
 .iconsBox {
   width: 80%;
   display: none;
