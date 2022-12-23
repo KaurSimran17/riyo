@@ -3001,6 +3001,16 @@ q {
   justify-content: flex-end;
 }
 
+ .translator {
+  margin-top: -140px;
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 140px;
+  right: 10px;
+}
+
 @media screen and (max-width:450px){
   .main .translate {
     margin-top: 80px;
