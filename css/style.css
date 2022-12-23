@@ -500,14 +500,14 @@ a {
 /* section4 PAGE START */
 
 .section4 {
-  /* min-height: 30vh; */
   width: 100%;
   background-color: #ecf2fa;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  min-height: 60vh;
+  height: 50vh;
 }
 
 .section4 h1 {
@@ -2651,7 +2651,7 @@ b {
   cursor: pointer;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
     url(../image/service3.png);
   display: flex;
   flex-direction: column;
@@ -2661,7 +2661,7 @@ b {
 
 .sec2 {
   cursor: pointer;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
     url(../image/service1.png);
   background-size: cover;
   /* background-position: center; */
@@ -2673,7 +2673,7 @@ b {
 
 .sec3 {
   cursor: pointer;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
     url(../image/service2.png);
   background-size: cover;
   background-position: center;
