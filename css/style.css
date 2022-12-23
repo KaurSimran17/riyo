@@ -2888,12 +2888,12 @@ b {
 .dropdown li a {
   font-size: 0.9rem;
 }
-.dropMenu:hover .dropdown {
+/* .dropMenu:hover .dropdown {
   display: flex;
 }
 .dropdown:hover .dropdown {
   display: flex;
-}
+} */
 
 .img {
   height: 100%;
