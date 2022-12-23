@@ -1295,8 +1295,6 @@ form {
 
 @media (max-width: 936px) {
   .box2 {
-
-
     padding: 0;
   }
 
@@ -2746,9 +2744,13 @@ b {
 
 .slide.sec2:hover {
   width: 50%;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../image/service1.png);
 }
 .slide.sec3:hover {
   width: 50%;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../image/service2.png);
 }
 .contentBox {
   height: 20%;
@@ -2762,12 +2764,10 @@ b {
   margin-top: 80px;
 }
 
-@media screen and (max-width:680px){
+@media screen and (max-width: 680px) {
   .contentBox {
     margin-top: 120px;
   }
-  
-  
 }
 .iconsBox {
   width: 80%;
@@ -2908,42 +2908,41 @@ b {
   width: 100%;
 }
 
-
-q{
+q {
   color: #707070;
 }
 
-.c h2{
+.c h2 {
   text-align: center;
   color: #e6683c;
   font-size: 2rem;
 }
 
-@media screen and (max-width:750px){
-  .c h2{
+@media screen and (max-width: 750px) {
+  .c h2 {
     text-align: center;
     color: #e6683c;
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width:550px){
-  .c h2{
+@media screen and (max-width: 550px) {
+  .c h2 {
     text-align: center;
     color: #e6683c;
     font-size: 1.3rem;
   }
 }
 
-@media screen and (max-width:400px){
-  .c h2{
+@media screen and (max-width: 400px) {
+  .c h2 {
     text-align: center;
     color: #e6683c;
     font-size: 1rem;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .hero-content {
     width: 100%;
     height: 40%;
@@ -2951,7 +2950,7 @@ q{
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 20px;
-}
+  }
 }
 
 /* @media (max-width: 350px){
@@ -2974,7 +2973,6 @@ q{
   justify-content: space-between;
 }
 
-
 /* @media screen and (max-width:550px) {
   .slide.sec1:hover {
     width: 90%;
@@ -2987,7 +2985,7 @@ q{
   }
 } */
 
-.navRight{
+.navRight {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

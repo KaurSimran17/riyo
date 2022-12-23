@@ -738,7 +738,6 @@
         height: 100%;
         object-fit: contain;
       }
-
     </style>
     <!-- Google tag (gtag.js) -->
     <script
@@ -857,29 +856,22 @@
           <img src="image/logo.svg" alt="" />
         </a>
         <div class="icon bx bx-menu"></div>
-        <div class="navRight">
-          <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <div class="dropMenu">
-              <li><a href="service.html">RIYO Services</a></li>
-              <div class="dropdown">
-                <li><a href="riyoparivaar.html">RIYO Parivaar</a></li>
-                <li><a href="#">RIYO Sahayata</a></li>
-                <li><a href="riyosuraksha.html">RIYO Suraksha</a></li>
-                <li><a href="#">RIYO Parivahan</a></li>
-                <li><a href="#">RIYO Drivers</a></li>
-              </div>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <div class="dropMenu">
+            <li><a href="service.html">RIYO Services</a></li>
+            <div class="dropdown">
+              <li><a href="riyoparivaar.html">RIYO Parivaar</a></li>
+              <li><a href="#">RIYO Sahayata</a></li>
+              <li><a href="riyosuraksha.html">RIYO Suraksha</a></li>
+              <li><a href="#">RIYO Parivahan</a></li>
+              <li><a href="#">RIYO Drivers</a></li>
             </div>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="https://rentitover.com/business/">RIYO Business</a></li>
-          </ul> 
-          <div class="translate">
-            <!-- <a id="translate-btn" onclick="transalateFun()"> Translate </a> -->
-            <div id="google_translate_element"></div>
           </div>
-        </div>
-        
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://rentitover.com/business/">RIYO Business</a></li>
+        </ul>
       </header>
       <div class="video">
         <video
@@ -1320,6 +1312,37 @@
         setTimeout(showSlide, 2000); // Change image every 2 seconds
       }
     </script>
+    <!-- <script>
+      let slide = 1;
+      showSlide(slide);
 
+      function plusSlides(n) {
+        showSlide((slide += n));
+      }
+
+      function currentSlide(n) {
+        showSlide((slide = n));
+      }
+
+      function showSlide(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slide = 1;
+        }
+        if (n < 1) {
+          slide = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slide - 1].style.display = "flex";
+        dots[slide - 1].className += " active";
+      }
+    </script> -->
   </body>
 </html>
