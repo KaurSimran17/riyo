@@ -3000,3 +3000,10 @@ q {
   display: flex;
   justify-content: flex-end;
 }
+
+@media screen and (max-width:450px){
+  .main .translate {
+    margin-top: 80px;
+    display: flex;
+    justify-content:center;}
+}
