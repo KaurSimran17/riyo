@@ -2651,9 +2651,9 @@ b {
   cursor: pointer;
   background-size: cover;
   background-position: center;
-  /* background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
-    url(../image/service3.png); */
-  background-image: url(../image/service3.png);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.3), rgba(0, 0, 0, 0.1)),
+    url(../image/service3.png);
+  /* background-image: url(../image/service3.png); */
   display: flex;
   flex-direction: column;
   justify-content: center;
