@@ -2871,6 +2871,9 @@ b {
 .slide.sec2:hover .c p {
   display: block;
 }
+.slide.sec2:hover #black {
+  color: #fff;
+}
 
 .slide.sec3:hover .c p {
   display: block;
@@ -2913,7 +2916,7 @@ q{
 .c h2{
   text-align: center;
   color: #e6683c;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width:750px){
@@ -2970,3 +2973,16 @@ q{
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+/* @media screen and (max-width:550px) {
+  .slide.sec1:hover {
+    width: 90%;
+  }
+  .slide.sec2:hover {
+    width: 90%;
+  }
+  .slide.sec3:hover {
+    width: 90%;
+  }
+} */
