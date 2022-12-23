@@ -37,6 +37,7 @@ body {
   background-attachment: fixed;
   position: relative;
   display: flex;
+  /* flex-direction:row; */
 }
 
 .bg-shadow {
@@ -56,7 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 5px 5px 60px;
+  padding: 15px 60px 5px 60px;
   background-color: var(--primary-color);
 }
 
@@ -2990,4 +2991,12 @@ q {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.main .translate {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
 }
