@@ -2651,8 +2651,9 @@ b {
   cursor: pointer;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
-    url(../image/service3.png);
+  /* background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../image/service3.png); */
+  background-image: url(../image/service3.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2661,8 +2662,9 @@ b {
 
 .sec2 {
   cursor: pointer;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
-    url(../image/service1.png);
+  /* background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../image/service1.png); */
+  background: url(../image/service1.png);
   background-size: cover;
   /* background-position: center; */
   display: flex;
@@ -2673,8 +2675,9 @@ b {
 
 .sec3 {
   cursor: pointer;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
-    url(../image/service2.png);
+  /* background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../image/service2.png); */
+  background: url(../image/service2.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -2825,7 +2828,7 @@ b {
 .c p {
   font-size: 0.9rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 
@@ -2857,6 +2860,7 @@ b {
 
 .c p {
   display: none;
+  font-size: 1.3rem;
 }
 
 .slide.sec1:hover .c p {
