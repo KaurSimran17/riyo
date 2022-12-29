@@ -2160,7 +2160,7 @@ form {
 .loading {
   width: 100%;
   height: 100vh;
-  background-color: #ee6c4d;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2168,8 +2168,11 @@ form {
   z-index: 99999;
   padding: 20px;
 }
-
-.loading img {
+/* .loading img{
+  width: 50%;
+  height: 80%;
+} */
+.loading video {
   -webkit-animation: bounce-in-fwd 1.1s both;
   animation: bounce-in-fwd 1.1s both;
 }
@@ -2696,6 +2699,8 @@ b {
 
 .slide.sec1:hover {
   width: 50%;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../image/service3.png);
 }
 
 .slide.sec1:hover .iconsBox {
@@ -3016,4 +3021,17 @@ q {
     margin-top: 80px;
     display: flex;
     justify-content:center;}
+}
+
+.blogScroll img{
+  width: 100%;
+}
+
+#mainLine {
+  font-size: 2.5rem;
+}
+
+#imageBlog{
+  object-fit: cover;
+  object-position: left;
 }
