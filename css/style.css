@@ -1424,6 +1424,7 @@ form {
 @media (max-width: 820px) {
   .section3 {
     min-height: auto;
+    gap: 0;
   }
 
   .box3-left,
