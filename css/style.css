@@ -2169,10 +2169,10 @@ form {
   z-index: 99999;
   padding: 20px;
 }
-/* .loading img{
+.loading video{
   width: 50%;
   height: 80%;
-} */
+}
 .loading video {
   -webkit-animation: bounce-in-fwd 1.1s both;
   animation: bounce-in-fwd 1.1s both;
