@@ -36,6 +36,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
+        margin-top: 3%;
         /* height: 100vh; */
       }
 
@@ -409,6 +410,26 @@
           font-size: 0.8rem;
         }
       }
+
+      .container{
+        background-image: none;
+      }
+
+      .video {
+        width: 100vw;
+        height: 100%;
+        margin-top: 3%;
+      }
+
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .hero-content h1{
+        color: #ee6c4d;
+      }
     </style>
     <!-- Google tag (gtag.js) -->
     <script
@@ -518,7 +539,7 @@
   </head>
   <body>
     <div class="container" id="home">
-      <div class="bg-shadow"></div>
+      <!-- <div class="bg-shadow"></div> -->
       <header>
         <a href="index.html" class="logo">
           <img src="image/logo.svg" alt="" />
@@ -543,6 +564,14 @@
           <li><a href="https://rentitover.com/business/">RIYO Business</a></li>
         </ul>
       </header>
+      <div class="video">
+        <video
+          src="image/logo animate riyo new.mp4"
+          autoplay
+          muted
+          class="videoHerosetion"
+        ></video>
+      </div>
       <section class="hero-section">
         <div class="hero-content">
           <h1>BLOG</h1>
