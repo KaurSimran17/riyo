@@ -447,8 +447,13 @@
           margin-top: 15%;
         }
         .hero-content {
-    height: 20%;
-}
+          height: 20%;
+        }
+      }
+      @media screen and (max-width: 300px) {
+        .hero-content {
+          height: 10%;
+        }
       }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -558,6 +563,10 @@
     <!-- End Meta Pixel Code -->
   </head>
   <body>
+    <div class="loading" id="loader">
+      <video src="image/logo animate riyo new orange bg.mp4" alt="" />
+      <!-- <img src="image/Untitled design.gif" alt="" /> -->
+    </div>
     <div class="container" id="home">
       <!-- <div class="bg-shadow"></div> -->
       <header>
@@ -843,6 +852,20 @@
     ></script>
     <script src="js/script.js"></script>
   </body>
+  <script>
+    var loader = document.getElementById("loader");
+
+    window.addEventListener("load", () => {
+      loader.style.display = "none";
+    });
+    // Scrollig Effects
+
+    AOS.init({
+      offset: 100,
+      once: false,
+      mirror: false,
+    });
+  </script>
   <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
